@@ -51,7 +51,6 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         label="Description"
         value={description}
         onChange={setDescription}
-        required
       />
 
       <TextField
@@ -84,7 +83,7 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
             type="submit"
             data-cy="submit-button"
             className="button is-link"
-            disabled={!title || !description || !imgUrl || !imdbUrl || !imdbId}
+            disabled={!title || !imgUrl || !imdbUrl || !imdbId}
           >
             Add
           </button>
