@@ -35,7 +35,7 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
   };
 
   return (
-    <form className="NewMovie" key={count} onSubmit={handleOnAdd}>
+    <form className="NewMovie" onSubmit={handleOnAdd}>
       <h2 className="title">Add a movie</h2>
 
       <TextField
